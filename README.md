@@ -5,5 +5,7 @@ Repro issue with blazor debugger not sending cookies in request.
 3. Navigate to /SignIn that will give you a cookie.
 4. Reload the site, the wasm application should now load.
 5. Try the FetchData page of the wasm application - note it calls a webapi that requires authentication - it works because you have the cookie.
-6. Alt shift D to open blazor debugging tools, place a breakpoint on Startup.cs where the Debug.WriteLine is - you'll see requests incoming without authentication cookie.
+6. Alt shift D to open blazor debugging tools - you may want to place a breakpoint on the server project, in Startup.cs where the Debug.WriteLine is - you'll see requests incoming from the debugger, without any authentication cookies.
+
+This bug makes it impossible to use the debugger if the static files are protected with cookie authentication.
 
