@@ -3,3 +3,11 @@
 ################################################################################
 
 /.vs/BlazorApp2
+/Client/obj
+/Client/bin/Debug/netstandard2.1
+/Client/BlazorApp2.Client.csproj.user
+/Server/bin/Debug/netcoreapp3.1
+/Server/obj
+/Server/BlazorApp2.Server.csproj.user
+/Shared/bin/Debug/netstandard2.1
+/Shared/obj
